@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='leaderboard'>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class='container'>
+    <h3>Leaderboard</h3>
+    <ul class='nav nav-pills'>
+      <li>
+        <a href="#/recent">Recent Top 100</a>
+      </li>
+      <li>
+        <a href="#/alltime">All Time Top 100</a>
+      </li>
+      </ul>
+  </div>
+  <section ng-view>
+  </section>  
+
+
+
+
+  <script src="https://code.angularjs.org/1.5.8/angular.js"></script>
+  <script src="app/app.js"></script>
+  <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+  <script src="app/controllers/recent.controller.js"></script>
+  <script src="app/controllers/alltime.controller.js"></script>
+  <script src="app/services/recent.service.js"></script>
+  <script src="app/services/alltime.service.js"></script>
+
+</body>
+
+</html>

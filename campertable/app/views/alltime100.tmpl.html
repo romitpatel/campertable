@@ -1,0 +1,21 @@
+<div class='container'>
+ <table class='table table-striped'>
+      <thead class='table-header'>
+        <tr>
+          <th>#</th>
+          <th>Camper Name</th>
+          <th ng-click="atVm.toggleSort('recent')">Points in last 30 days</th>
+          <th ng-click="atVm.toggleSort('alltime')">All time points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="camper in atVm.campers  | orderBy:atVm.sorter.by:atVm.sorter.reverse">
+          <td>{{$index + 1}}</td>
+          <td><img ng-src='{{camper.img}}'>{{camper.username}}</td>
+          <td>{{camper.recent}}</td>
+          <td>{{camper.alltime}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+</div>

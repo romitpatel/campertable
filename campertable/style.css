@@ -1,0 +1,34 @@
+/* Styles go here */
+.table-header td{
+  padding : 20px;
+}
+
+.table-header tr{
+  padding:20px;
+}
+
+.title{
+  font-size:30;
+}
+
+h3{
+  text-align:center;
+  border-top:1px solid;
+  border-bottom:1px solid;
+  padding:10px;
+  display:block;
+  
+}
+
+img{
+  height:30px;
+  width:30px;
+  margin-right:10px;
+  border: 2px solid black;
+  border-radius:3px;
+}
+
+h4{
+  display:inline-block;
+  margin:5px 60px;
+}
